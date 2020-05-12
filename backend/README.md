@@ -91,10 +91,16 @@ GET '/categories'
 
 
 ## Testing
-To run the tests, run
+The code to drop any existing trivia db, recreate it and populate it with test data is built into test_flaskr.py.  So in order to run the tests, run the following:
+
+if using Windows:
 ```
-dropdb trivia_test
-createdb trivia_test
-psql trivia_test < trivia.psql
+set PGPASSWORD=udacity
+python test_flaskr.py
+```
+
+if using other OS:
+```
+export PGPASSWORD=udacity
 python test_flaskr.py
 ```
