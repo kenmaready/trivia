@@ -91,7 +91,7 @@ GET '/categories'
 
 
 ## Testing
-The code to drop any existing trivia db, recreate it and populate it with test data is built into test_flaskr.py.  So in order to run the tests, run the following:
+I've added the code to drop any existing trivia db, recreate it and populate it with test data into test_flaskr.py itself.  So in order to run the tests, you don't need to run those commands first.  But you do need to set the postgresql password in the environment (or else you will need to enter the password three times once you start to run flaskr_test).  In order to set that password, first run one of the following:
 
 if using Windows:
 ```
@@ -104,3 +104,9 @@ if using other OS:
 export PGPASSWORD=udacity
 python test_flaskr.py
 ```
+
+and then run
+```
+python flaskr_test.py
+```
+An end result of 'OK' means all tests have passed.
